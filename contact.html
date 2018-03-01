@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body background="/assets/images/sos.png">
+
+   <header class='clearfix'>
+      <div class="headerbox">
+     <div class="headercontainer">
+     
+       <h1>Mitchell Mask</h1>
+     
+        <div style="border: 0.5px solid black;width: 100%;"></div>
+<!-- I can not get the nav bar to float right in header.
+  Part of my issue was to use 2 classes or 1 class and an id in same statement in stylesheet. When I try to adjust it, I break the site too much. -->
+
+          <div class="nav2">
+              <ul id="nav2">
+                <li><a href="index.html">About |</a></li>
+                <li><a href="portfolio.html">Portfolio |</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+    </div>
+    </div>
+   </header>
+<div class="wrapper">
+
+  <div class="container clearfix">
+
+    <div class="section about clearfix">
+
+      <h2>Contact</h2>
+      <hr>
+    <!-- I was able to start a form with code in one if the suggested links.
+    Adapted it to work.-->
+      <div class="container2">
+          <form action="action_page.php">
+        
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+           
+            </select>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
+          </form>
+        </div>
+
+    </div>
+<!-- I cannot get this element to position to top right. 
+  Its odd as its the same code as index page. -->
+  <div class="section social clearfix">
+    <h3>Connect with Me</h3>
+    <hr>
+    <div class="nav">
+        <ul id="nav">
+            <li><a href="https://www.github.com">
+              <img src="assets/images/github.png" alt="GitHub" width="48" height="48" border="0">
+              </a></li>
+            <li><a href="https://www.linkedin.com">
+              <img src="assets/images/linkedin.png" alt="LinkedIn" width="48" height="48" border="0">
+              </a></li>
+            <li><a href="https://www.stackoverflow.com">
+              <img src="assets/images/stackoverflow.png" alt="Stack Overflow" width="48" height="48" border="0">
+              </a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+  <footer>
+<!-- I have issues with the footer scaling correctly as expected. -->
+    <h4>Copyright 2018 - Mitchell Mask</h4>
+    
+   </footer>
+  </body>
+
+</html>
